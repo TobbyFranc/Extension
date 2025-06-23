@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* ## Colors */
+
+  --Neutral900: hsl(227, 75%, 14%);
+  --Neutral800: hsl(226, 25%, 17%);
+  --Neutral700: hsl(225, 23%, 24%);
+  --Neutral600: hsl(226, 11%, 37%);
+  --Neutral300: hsl(0, 0%, 78%);
+  --Neutral200: hsl(217, 61%, 90%);
+  --Neutral100: hsl(0, 0%, 93%);
+  --Neutral0: hsl(200, 60%, 99%);
+
+  /* ### Red */
+
+  --Red400: hsl(3, 86%, 64%);
+  --Red500: hsl(3, 71%, 56%);
+  --Red700: hsl(3, 77%, 44%);
+
+  /* ### Gradient */
+
+  --LightGradient: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+  --DarkGradient: linear-gradient(180deg, #040918 0%, #091540 100%);
+}
+
+.bg-dark {
+  background-image: var(--DarkGradient);
+}
+.bg-light {
+  background-image: var(--LightGradient);
+}
+
+/* Font */
+
+.noto-sans-400 {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+  "wdth" 100;
+}
+.noto-sans-500 {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+  "wdth" 100;
+}
+.noto-sans-700 {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+  "wdth" 100;
+}
