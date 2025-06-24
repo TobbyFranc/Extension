@@ -76,7 +76,7 @@ const Hero = () => {
           >
             extensions list
           </h2>
-          <div className="flex flex-wrap gap-2 noto-sans-400">
+          <div className="w-full flex gap-2 noto-sans-400">
             <button
               onClick={() => setfilteredItems("all")}
               className={
@@ -99,7 +99,7 @@ const Hero = () => {
               onClick={() => setfilteredItems("active")}
               className={
                 bgToggled
-                  ? `w-full cursor-pointer text-[var(--Neutral800)] shadow-md rounded-full px-4 py-2 hover:bg-[var(--Red400)] ${
+                  ? `cursor-pointer text-[var(--Neutral800)] shadow-md rounded-full px-4 py-2 hover:bg-[var(--Red400)] ${
                       filteredItems === "active"
                         ? "bg-[var(--Red500)] text-[var(--Neutral900)]"
                         : "bg-[var(--Neutral100)] text-[var(--Neutral800)]"
