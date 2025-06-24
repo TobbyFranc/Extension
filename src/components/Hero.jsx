@@ -53,7 +53,7 @@ const Hero = () => {
       localStorage.setItem("removedCards", JSON.stringify(removed));
     }
 
-    console.log(`${card.name} card has been removed.`);
+    console.log(`${name} card has been removed.`);
     // Optionally, remove toggle from localStorage:
     localStorage.removeItem(`toggle-${name}`);
   };
