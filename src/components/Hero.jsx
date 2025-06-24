@@ -76,7 +76,7 @@ const Hero = () => {
           >
             extensions list
           </h2>
-          <div className="w-full flex items-center gap-2 noto-sans-400">
+          <div className="flex justify-center md:justify-end gap-2 noto-sans-400">
             <button
               onClick={() => setfilteredItems("all")}
               className={
