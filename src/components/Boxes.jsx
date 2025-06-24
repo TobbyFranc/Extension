@@ -45,7 +45,7 @@ const Boxes = ({ card, onRemove, bgToggled}) => {
 
   const handleToggle = () => {
       setToggle((prevToggle) => !prevToggle);
-      console.log("Toggle is now: ", !toggle);
+      console.log(`Toggle ${card.name} is now: ${!toggle}`);
   };
 
   return (
