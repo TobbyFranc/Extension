@@ -52,6 +52,8 @@ const Hero = () => {
       removed.push(name);
       localStorage.setItem("removedCards", JSON.stringify(removed));
     }
+
+    console.log(`${card.name} card has been removed.`);
     // Optionally, remove toggle from localStorage:
     localStorage.removeItem(`toggle-${name}`);
   };
@@ -66,7 +68,7 @@ const Hero = () => {
       <div className="w-full py-[200px] flex flex-col justify-center items-center max-w-[90%] mx-auto text-slate-50">
         <div className="w-full flex flex-col md:flex-row justify-between items-center">
           <h2
-            className={`capitalize text-xl md:text-2xl noto-sans-700 font-bold ${
+            className={`capitalize text-xl md:text-2xl noto-sans-700 font-bold mb-4 md:mb-0 ${
               bgToggled
                 ? "text-[var(--Neutral800)]"
                 : "text-[var(--Neutral200)]"
@@ -97,7 +99,7 @@ const Hero = () => {
               onClick={() => setfilteredItems("active")}
               className={
                 bgToggled
-                  ? `cursor-pointer text-[var(--Neutral800)] shadow-md rounded-full px-4 py-2 hover:bg-[var(--Red400)] ${
+                  ? `w-full cursor-pointer text-[var(--Neutral800)] shadow-md rounded-full px-4 py-2 hover:bg-[var(--Red400)] ${
                       filteredItems === "active"
                         ? "bg-[var(--Red500)] text-[var(--Neutral900)]"
                         : "bg-[var(--Neutral100)] text-[var(--Neutral800)]"
