@@ -64,7 +64,7 @@ const Hero = () => {
     >
       <Navbar onBgToggle={handleBgToggle} bgToggled={bgToggled} />
       <div className="w-full py-[200px] flex flex-col justify-center items-center max-w-[90%] mx-auto text-slate-50">
-        <div className="w-full flex justify-between items-center">
+        <div className="w-full flex flex-col md:flex-row justify-between items-center">
           <h2
             className={`capitalize text-xl md:text-2xl noto-sans-700 font-bold ${
               bgToggled
